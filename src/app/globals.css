@@ -1,26 +1,108 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-gold: #C9A84C;
+  --color-gold-light: #E8C97A;
+  --color-gold-dark: #A8873A;
+  --color-dark: #0a0a0a;
+  --color-dark-secondary: #111111;
+  --color-cream: #F5F0E8;
+  --color-cream-dark: #EAE3D5;
+  --color-muted: #6B6B6B;
+
+  --font-heading: var(--font-playfair);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #0a0a0a;
+  color: #ededed;
+  font-family: var(--font-inter), Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-playfair), serif;
+}
+
+.section-cream {
+  background-color: #F5F0E8;
+  color: #0a0a0a;
+}
+
+.section-dark {
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+
+.section-dark-secondary {
+  background-color: #111111;
+  color: #ededed;
+}
+
+.gold-text {
+  color: #C9A84C;
+}
+
+.gold-border {
+  border-color: #C9A84C;
+}
+
+.btn-gold {
+  background-color: #C9A84C;
+  color: #0a0a0a;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s ease;
+}
+
+.btn-gold:hover {
+  background-color: #E8C97A;
+}
+
+.btn-outline-gold {
+  background-color: transparent;
+  border: 1.5px solid #C9A84C;
+  color: #ededed;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-gold:hover {
+  background-color: #C9A84C;
+  color: #0a0a0a;
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 1.5px solid #0a0a0a;
+  color: #0a0a0a;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #0a0a0a;
+  color: #ededed;
+}
+
+.stat-divider {
+  border-left: 1px solid rgba(201, 168, 76, 0.3);
+}
+
+@media (max-width: 768px) {
+  .stat-divider {
+    border-left: none;
+    border-top: 1px solid rgba(201, 168, 76, 0.3);
+  }
 }
