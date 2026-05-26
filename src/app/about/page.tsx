@@ -26,13 +26,13 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#0a0a0a] pt-36 pb-20">
+      <section className="bg-dark pt-36 pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <SectionLabel>Who We Are</SectionLabel>
           <h1 className="text-5xl md:text-7xl font-bold text-white leading-none mb-6">
             FAITH.
             <br />
-            <span className="text-[#C9A84C]">PURPOSE.</span>
+            <span className="text-gold">PURPOSE.</span>
             <br />
             IMPACT.
           </h1>
@@ -44,11 +44,11 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="bg-[#F5F0E8] py-20">
+      <section className="bg-cream py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
             <SectionLabel dark>Our Mission</SectionLabel>
-            <h2 className="text-3xl font-bold text-[#0a0a0a] mb-6">Why We Exist</h2>
+            <h2 className="text-3xl font-bold text-dark mb-6">Why We Exist</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               We exist to uplift communities, unlock human potential, and create sustainable change
               through education, innovation, and compassion. We believe that every life holds a
@@ -61,7 +61,7 @@ export default function AboutPage() {
           </div>
           <div>
             <SectionLabel dark>Our Vision</SectionLabel>
-            <h2 className="text-3xl font-bold text-[#0a0a0a] mb-6">Where We&apos;re Going</h2>
+            <h2 className="text-3xl font-bold text-dark mb-6">Where We&apos;re Going</h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               A world where every individual — regardless of geography, circumstance, or background —
               has access to the tools, knowledge, and support needed to live a life of dignity,
@@ -129,8 +129,8 @@ export default function AboutPage() {
                   className="h-80 bg-cover bg-center bg-[#ccc] mb-4 overflow-hidden"
                   style={{ backgroundImage: `url('${member.image}')` }}
                 />
-                <h3 className="text-[#0a0a0a] font-bold text-lg">{member.name}</h3>
-                <p className="text-[#C9A84C] text-sm font-semibold tracking-wide">{member.role}</p>
+                <h3 className="text-dark font-bold text-lg">{member.name}</h3>
+                <p className="text-gold text-sm font-semibold tracking-wide">{member.role}</p>
               </div>
             ))}
           </div>
